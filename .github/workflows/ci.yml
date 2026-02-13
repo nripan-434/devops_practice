@@ -30,10 +30,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: build docker image
-        uses: docker build -t test_ci.py .
+        uses: docker build -t test_ci .
       - name: build container
-        uses: docker run test_ci.py pytest
+        uses: docker run test_ci pytest
 
-     
+    #  conflict-no protectionrule
 
       
